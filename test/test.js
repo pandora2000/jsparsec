@@ -503,5 +503,3 @@ describe('.all', () => {
     expect(p.parse('@ k1')).to.deep.equal({status: true, index: 4, value: '@ k1'})
   })
 })
-
-
