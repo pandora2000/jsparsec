@@ -1,0 +1,42 @@
+{
+  "name": "jsparsec",
+  "version": "1.0.0",
+  "description": "Javascript implementation of Parser Combinators with extended backtracking",
+  "keywords": [
+    "parsing",
+    "parse",
+    "parser",
+    "parser combinators"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js -f ./node_modules/eslint-friendly-formatter src test",
+    "test": "nyc mocha",
+    "coverage": "npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandora2000/jsparsec.git"
+  },
+  "author": "pandora2000",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandora2000/jsparsec/issues"
+  },
+  "homepage": "https://github.com/pandora2000/jsparsec#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^11.2.1"
+  },
+  "dependencies": {}
+}
